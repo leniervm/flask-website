@@ -4,5 +4,5 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - SECRET_KEY=0YYPcduWvT7LQYFY9g6gsjNUgKecExIh
+      - SECRET_KEY=${SECRET_KEY}
       - FLASK_ENV=production

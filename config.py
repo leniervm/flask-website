@@ -2,7 +2,7 @@
 import os
 class Config:
 # Common settings for all environments
-    SECRET_KEY = os.getenv("SECRET_KEY", "0YYPcduWvT7LQYFY9g6gsjNUgKecExIh")
+    SECRET_KEY = os.getenv("SECRET_KEY")
     # ... other settings
 
 class DevelopmentConfig(Config):
