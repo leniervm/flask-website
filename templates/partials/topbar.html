@@ -1,0 +1,56 @@
+<div data-bs-spy="scroll" data-bs-target="#navbarCollapse" data-bs-offset="78"></div>
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark" id="sticky">
+    <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="logo text-uppercase" href="/">
+            <img src="{{ url_for('static', filename='images/logo-white.png') }}" alt="" class="logo-light" height="50" />
+            <img src="{{ url_for('static', filename='images/logo-black.png') }}" alt="" class="logo-dark" height="50" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+                <li class="nav-item active">
+                    <a href="{{ url_for('index') }}" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('about') }}" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="topnav-products" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="topnav-products">
+                        <a href="{{ url_for('ecoline') }}" class="dropdown-item">Calderas Ecoline</a>
+                        <a href="{{ url_for('heavyline') }}" class="dropdown-item">Calderas Heavyline</a>
+                        <a href="{{ url_for('hybridline') }}" class="dropdown-item">Calderas Hybridline</a>
+                        <a href="{{ url_for('boilerlogic') }}" class="dropdown-item">Plataforma BoilerLogic</a>
+                        <a href="{{ url_for('auxiliary') }}" class="dropdown-item">Equipos auxiliares</a>
+                        <a href="{{ url_for('parts') }}" class="dropdown-item">Repuestos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="topnav-services" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="topnav-services">
+                        <a href="{{ url_for('maintenance') }}" class="dropdown-item">Mantenimiento</a>
+                        <a href="{{ url_for('automation') }}" class="dropdown-item">Automatización</a>
+                        <a href="{{ url_for('measuring') }}" class="dropdown-item">Mediciones</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('contact') }}" class="nav-link">Contacto</a>
+                </li>
+            </ul>            
+             <a href="https://app.calderasinecolma.com" target="_blank" class="btn btn-primary rounded-pill">
+                <i class="mdi mdi-cloud mr-1"></i> BoilerLogic
+             </a>
+        </div>
+    </div>
+</nav> <!-- Navbar End -->
+</div>

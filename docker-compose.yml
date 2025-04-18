@@ -1,0 +1,8 @@
+services:
+  web:
+    image: website
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=0YYPcduWvT7LQYFY9g6gsjNUgKecExIh
+      - FLASK_ENV=production

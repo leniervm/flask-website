@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'partials/header.html' %}
+</head>
+
+<body>
+    {% include 'partials/topbar.html' %}
+    <!-- home start -->
+    <section class="bg-home bg-dark" id="home">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="home-title mo-mb-20">
+                                <h1 class="mb-4 text-white">Calderas Inecolma®, máxima eficiencia y tecnología para sus
+                                    grandes proyectos</h1>
+                                <p class="text-white-50 home-desc mb-5">Brindamos soluciones de la mejor calidad según
+                                    normativas ASME, NFPA, NTC y RETIE con tecnología IIoT asociada para el mejor
+                                    desempeño y rendimiento de nuestras calderas</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <a href="https://wa.me/message/4NKWOU7IQRU4F1">
+                                                <button type="button"
+                                                    class="btn rounded-pill btn-lg btn-success w-100"><i
+                                                        class="mdi mdi-whatsapp"></i> Contáctanos</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="contact">
+                                            <button type="button"
+                                                class="btn rounded-pill btn-lg btn-primary w-100">Solicitar
+                                                cotización</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-6">
+                                <img src="{{ url_for('static', filename='images/homegreat.png') }}" alt="home image"
+                                    class="img-fluid mx-auto d-block">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- brands start -->
+    <section>
+        <div class="container">
+            <div class="clients p-4 bg-white">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/brands/DANFOSS.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/brands/ALTAMIRA.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/brands/ECOFLAM.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/brands/SIEMENS.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/brands/ANDROID.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/brands/OMNI.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div>
+        </div> <!-- end container -->
+    </section>
+    <!-- brands end -->
+
+    <section class="section-sm" id="company">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4 pb-1">
+                        <h3 class="mb-3">¡Bienvenido a Calderas Inecolma!</h3>
+                        <p class="text-muted text-justify">Somos una empresa especializada en el diseño, ingeniería,
+                            fabricación y montaje de calderas de vapor para combustibles como gas, diesel, carbón y
+                            biomasa bajo el seguimiento de los mejores estándares e implementación de la mejor
+                            tecnología.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="features-box">
+                        <div class="features-img mb-4">
+                            <img src="{{ url_for('static', filename='images/icons/browsertool.png') }}" alt="">
+                        </div>
+                        <h4 class="mb-3">Gran soporte</h4>
+                        <p class="text-muted">Asesoramos a nuestros clientes en la selección correcta de los equipos y
+                            los acompañamos en su proceso de montaje y capacitación.</p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4">
+                    <div class="features-box">
+                        <div class="features-img mb-4">
+                            <img src="{{ url_for('static', filename='images/icons/datatext.png') }}" alt="">
+                        </div>
+                        <h4 class="mb-3">Seguridad e ingeniería</h4>
+                        <p class="text-muted">LLevamos a cabo todas la etapas del diseño y fabricación de nuestros
+                            equipos con los mejores estandáres y proveemos la información técnica necesario para sus
+                            proyectos.</p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4">
+                    <div class="features-box">
+                        <div class="features-img mb-4">
+                            <img src="{{ url_for('static', filename='images/icons/dollarpaper.png') }}" alt="">
+                        </div>
+                        <h4 class="mb-3">Garantía</h4>
+                        <p class="text-muted">Entendemos lo valioso de su inversión, y es por ello que garantizamos
+                            todos nuestros equipos por mínimo 1 año y algunas otras partes por 2 años.</p>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+
+    <!-- products start -->
+    <section class="section bg-dark" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title text-center mb-3">
+                        <h3 class="text-white">Productos</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="ecoline" class="text-dark">
+                            <img src="{{ url_for('static', filename='images/boilers/boiler12.png') }}" alt=""
+                                class="img-fluid mx-auto d-block">
+                            <div class="p-2 text-center">
+                                <a href="ecoline">
+                                    <button type="button" class="btn btn-lg rounded-pill btn-primary w-100">Calderas
+                                        Ecoline®</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="heavyline" class="text-dark">
+                            <img src="{{ url_for('static', filename='images/boilers/boiler8.png') }}" alt=""
+                                class="img-fluid mx-auto d-block">
+                            <div class="p-2 text-center">
+                                <a href="heavyline">
+                                    <button type="button" class="btn btn-lg rounded-pill btn-primary w-100">Calderas
+                                        Heavyline®</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="hybridline" class="text-dark">
+                            <img src="{{ url_for('static', filename='images/boilers/boiler11.png') }}" alt=""
+                                class="img-fluid mx-auto d-block">
+                            <div class="p-2 text-center">
+                                <a href="hybridline">
+                                    <button type="button" class="btn btn-lg rounded-pill btn-primary w-100">Calderas
+                                        Hybridline®</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="boilerlogic" class="text-dark">
+                            <img src="{{ url_for('static', filename='images/boilers/electrical2.png') }}" alt=""
+                                class="img-fluid mx-auto d-block">
+                            <div class="p-2 text-center">
+                                <a href="boilerlogic">
+                                    <button type="button" class="btn btn-lg rounded-pill btn-primary w-100">Sistema
+                                        BoilerLogic®</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="auxliary" class="text-dark">
+                            <img src="{{ url_for('static', filename='images/boilers/auxiliary2.png') }}" alt=""
+                                class="img-fluid mx-auto d-block">
+                            <div class="p-2 text-center">
+                                <a href="auxliary">
+                                    <button type="button" class="btn btn-lg rounded-pill btn-primary w-100">Equipos
+                                        Auxiliares</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="parts" class="text-dark">
+                            <img src="{{ url_for('static', filename='images/boilers/pump1.png') }}" alt=""
+                                class="img-fluid mx-auto d-block">
+                            <div class="p-2 text-center">
+                                <a href="parts">
+                                    <button type="button"
+                                        class="btn btn-lg rounded-pill btn-primary w-100">Repuestos</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+
+        </div> <!-- end container -->
+    </section>
+    <!-- products end -->
+
+    <!-- services start -->
+    <section class="section bg-white" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title text-center mb-3">
+                        <h3>Servicios</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="maintenance" class="text-white">
+                            <img src="{{ url_for('static', filename='images/services/maintenance1.png') }}" alt=""
+                                class="img-fluid mx-auto d-block rounded-circle">
+                            <div class="p-2 text-center">
+                                <a href="maintenance">
+                                    <button type="button"
+                                        class="btn btn-lg rounded-pill btn-primary w-100">Mantenimiento
+                                        Preventivo</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="automation" class="text-white">
+                            <img src="{{ url_for('static', filename='images/services/automation1.png') }}" alt=""
+                                class="img-fluid mx-auto d-block rounded-circle">
+                            <div class="p-2 text-center">
+                                <a href="automation">
+                                    <button type="button"
+                                        class="btn btn-lg rounded-pill btn-primary w-100">Automatización</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="demo-box bg-white mt-4 p-2">
+                        <a href="meausuring" class="text-white">
+                            <img src="{{ url_for('static', filename='images/services/measuring1.png') }}" alt=""
+                                class="img-fluid mx-auto d-block rounded-circle">
+                            <div class="p-2 text-center">
+                                <a href="meausuring">
+                                    <button type="button"
+                                        class="btn btn-lg rounded-pill btn-primary w-100">Mediciones</button>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+    <!-- services end -->
+
+    <!-- customers start -->
+    <section class="section bg-dark" id="customers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title text-center mb-3">
+                        <h3 class="text-white">Nuestros Clientes</h3>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </section>
+    <section>
+        <div class="container">
+            <div class="clients p-4 bg-white">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/clients/PRETECOR.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/clients/ESPARTACO.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/clients/INNOVAFRUITS.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/clients/LUCERNA.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/clients/TONNER.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="client-images">
+                            <img src="{{ url_for('static', filename='images/clients/MASDULCES.png') }}" alt="logo-img"
+                                class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div>
+        </div> <!-- end container -->
+    </section>
+    <!-- customers end -->
+
+    <!-- information start -->
+<section class="section-sm bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-9">
+                <h3 class="mb-0 mo-mb-20">Brindamos soluciones eficientes y seguras</h3>
+            </div>
+            <div class="col-md-3">
+                <div class="text-end">
+                    <a href="mailto:info@calderasinecolma.com" class="btn btn-outline-dark rounded-pill"><i class="mdi mdi-email-outline me-1"></i> Escríbanos</a>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</section>
+<!-- information end -->
+
+    <footer>
+        {% include 'partials/footer.html' %}
+    </footer>
+
+    {% include 'partials/scripts.html' %}
+
+</body>
+
+</html>
